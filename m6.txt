@@ -1,0 +1,39 @@
+from textblob import TextBlob
+from matplotlib import pyplot as plt
+import numpy as np
+a=input("enter the sentence 1")
+b=input("enter the sentence 2")
+c=input("enter the sentence 2")
+edu_a=TextBlob(a)
+edu_b=TextBlob(b)
+edu_c=TextBlob(c)
+x=edu_a.polarity
+y=edu_b.polarity
+z=edu_c.polarity
+p=x*100
+q=y*100
+r=z*100
+s=(p+q+r)/3
+j=[p,q,r]
+l=sorted(j)
+print(sorted(j))
+m=l[0]
+n=l[1]
+o=l[2]
+if s>0:
+    print("overall personality = positive")
+if s==0:
+    print("overall personality = neutral")
+if s<0:
+    print("overall personality = negative")
+
+k=["negative","neutral","positive"]
+h=[o,n,m]
+plt.title("personility graph")
+plt.xlabel("sentimentes")
+plt.ylabel("score")
+plt.bar(x, y, color = "hotpink")
+plt.bar(k,h)
+plt.show()
+ 
+

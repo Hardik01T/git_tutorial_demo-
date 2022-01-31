@@ -1,0 +1,3 @@
+1. Install app, run it once and close.
+2. Run "Host block.bat" as Admin or block program in firewall.
+3. Copy all files from licenses folder to "C:\Users\%username%\AppData\Roaming\Wondershare\PDFelement\Config\WSID"
